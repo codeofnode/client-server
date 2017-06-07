@@ -1,0 +1,31 @@
+{
+  "vars": {
+    "supportEmail": "support@example.com",
+    "app": {
+      "name": "client-server",
+      "key": "cs",
+      "title": "A Client Server app",
+      "keywords": "client server json modular app",
+      "description": "A sample application with json2server to demonstrate its use to build modular application.",
+      "version": "0.0.1"
+    },
+    "locale": {
+      "en": {
+        "mainloading": "loading ...",
+        "loadingtimeout": "If it taking too much time, please contact us at support@example.com.",
+        "success": "Request was successful.",
+        "permdenied": "Permission denied. Please contact your admin."
+      }
+    }
+  },
+  "root": {
+    "$": {
+      "@": "renderPage"
+    },
+    "api": {
+      "+": {
+        "loc": "en"
+      }
+    }
+  }
+}

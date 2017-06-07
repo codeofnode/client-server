@@ -1,0 +1,30 @@
+{
+  "name": "client-server",
+  "version": "0.0.1",
+  "description": "A sample application with json2server to demonstrate its use to build modular application.",
+  "scripts": {
+    "start": "./node_modules/json2server/bin/json2server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/codeofnode/client-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codeofnode/client-server/issues",
+    "email": "codeofnode@gmail.com"
+  },
+  "keywords": [
+    "client",
+    "server",
+    "json",
+    "modular",
+    "app"
+  ],
+  "author": "Ramesh Kumar <codeofnode@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/codeofnode/client-server",
+  "dependencies": {},
+  "devDependencies": {
+    "json2server": "latest"
+  }
+}

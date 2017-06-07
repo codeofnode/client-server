@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="mdl-js">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="description" content="A sample application with json2server to demonstrate its use to build modular application."/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>A Client Server app</title>
+  <link rel="stylesheet" href="/css/material.css"/>
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+  <body>
+    <div class="no-click" id="no_click_div"></div>
+    <div class="cs-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="cs-header mdl-layout__header">
+        <div id="id-fixedtop-block" class="mdl-layout__header-row"></div>
+      </header>
+      <div id="id-fixedmenu-block" class="cs-drawer mdl-layout__drawer">
+      </div>
+      <main class="mdl-layout__content">
+        <div id="main-content-block" class="cs-content"></div>
+        <div id="main-progress-block">
+          <center><h4>loading ...</h4></center>
+          <center>
+            <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+          </center>
+          <br>
+          <center>If it taking too much time, please contact us at support@example.com.</center>
+        </div>
+      </main>
+    </div>
+    <div id="cs-snackbar-blk" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script>
+      window.stoploader = (function(elm,nocl){
+        elm.style.display = 'none';
+        nocl.className = '';
+      }).bind(null,document.getElementById('main-progress-block'),
+        document.getElementById('no_click_div'));
+      window.startloader = (function(elm,nocl){
+        elm.style.display = 'block';
+        nocl.className = 'no-click';
+      }).bind(null,document.getElementById('main-progress-block'),
+        document.getElementById('no_click_div'));
+      window.onload = function(){ stoploader(); };
+    </script>
+    <script src="/js/A-cs-1.js"></script>
+    <script src="/js/material.js"></script>
+  </body>
+</html>
