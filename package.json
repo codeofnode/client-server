@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "A sample application with json2server to demonstrate its use to build modular application.",
   "scripts": {
-    "start": "./node_modules/json2server/bin/json2server"
+    "start": "./node_modules/json2server/bin/json2server",
+    "test": "node test"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/codeofnode/client-server",
   "dependencies": {},
   "devDependencies": {
-    "json2server": "latest"
+    "json2server": "latest",
+    "nodeunit": "latest"
   }
 }
