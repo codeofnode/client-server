@@ -1147,7 +1147,7 @@ return func;
 })(GLOBAL_APP_CONFIG, GLOBAL_METHODS, GLOBAL_VARS, GLOBAL_API);
 GLOBAL_METHODS.makeToLast(GLOBAL_API.root, '_methods','renderFixedTop');
 GLOBAL_API.root._methods.renderFixedTop=(function ( GLOBAL_APP_CONFIG,GLOBAL_METHODS,GLOBAL_VARS,GLOBAL_API){
-var once = true, navHTML = ('<span id="current-cs-title" class="mdl-layout-title">A Client Server app</span><div class="mdl-layout-spacer"></div><div class="cs-navigation-container">  <nav class="cs-navigation mdl-navigation">    <a class="mdl-navigation__link mdl-typography--text-uppercase pointer" onclick="r2(\'/\')">      Home    </a>  </nav></div><div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">  <label class="mdl-button mdl-js-button mdl-button--icon" for="top-fixed-search">    <i class="material-icons">search</i>  </label>  <div class="mdl-textfield__expandable-holder">    <input class="mdl-textfield__input" type="text" id="top-fixed-search">    <label class="mdl-textfield__label" for="search">Search a ins</label>  </div></div>');
+var once = true, navHTML = ('<span id="current-cs-title" class="mdl-layout-title">A Client Server app</span><div class="mdl-layout-spacer"></div><div class="cs-navigation-container">  <nav class="cs-navigation mdl-navigation">    <a class="mdl-navigation__link mdl-typography--text-uppercase pointer" onclick="r2(\'/\')">      Home    </a>  </nav></div><div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">  <label class="mdl-button mdl-js-button mdl-button--icon" for="top-fixed-search">    <i class="material-icons">search</i>  </label>  <div class="mdl-textfield__expandable-holder">    <input class="mdl-textfield__input" type="text" id="top-fixed-search">    <label class="mdl-textfield__label" for="search">search</label>  </div></div>');
 
 function func(vars,methods,req,res,next){
   if(once){
@@ -1163,7 +1163,7 @@ return func;
 GLOBAL_METHODS.makeToLast(GLOBAL_API.root, '_methods','renderHomePage');
 GLOBAL_API.root._methods.renderHomePage=(function ( GLOBAL_APP_CONFIG,GLOBAL_METHODS,GLOBAL_VARS,GLOBAL_API){
 
-var HTML = ('<center>  <h4>search below with the instance name</h4>  <div class="mdl-textfield mdl-js-textfield">    <input class="mdl-textfield__input" type="text" id="location-search">    <label class="mdl-textfield__label">enter your instance</label>  </div></center>');
+var HTML = ('<center>  <h4>search below</h4>  <div class="mdl-textfield mdl-js-textfield">    <input class="mdl-textfield__input" type="text" id="location-search">    <label class="mdl-textfield__label">enter info</label>  </div></center>');
 
 function func(vars,methods,req,res,next){
   next(HTML);
