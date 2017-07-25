@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "A sample application with json2server to demonstrate its use to build modular application.",
   "scripts": {
-    "test": "node test",
     "start": "./node_modules/json2server/bin/json2server",
     "distrun": "npm run build && cd dist && node server",
+    "test": "node test",
     "build": "rm -rf dist && mkdir -p dist/static && cp -r static/css/font dist/static/ && cp static/index.html dist/static/ && cp package.json dist/ && ./node_modules/json2server/bin/json2server -o=dist/server.js && ./node_modules/json2server/bin/json2server -b=static/js/A-cs-1.js && cat static/css/*.css > dist/static/style.css && cat static/js/*.js > dist/static/script.js && node _internal/buildindex"
   },
   "repository": {

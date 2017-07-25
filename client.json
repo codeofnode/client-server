@@ -15,7 +15,20 @@
       "loadingtimeout": "If it taking too much time, please contact us at support@example.com.",
       "success": "Request was successful.",
       "permdenied": "Permission denied. Please contact your admin."
-    }
+    },
+    "buildNumber": 0,
+    "version": "0.0.1",
+    "search": {
+      "title": "search below",
+      "text": "instance",
+      "key": "ins"
+    },
+    "showTopSearch": "none",
+    "theme": {
+      "primary": "pink",
+      "accent": "blue"
+    },
+    "material": "1.3.0"
   },
   "root": {
     "+": {
